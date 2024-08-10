@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,542;1,542&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    :root {
+        --color-primary: #FFBF00;
+        --color-secondary: #DEAC80;
+        --background-primary: #FEF3E2;
+        --background-secondary: #FFFFFF;
+        font-family: "Inter", sans-serif;
+    }
+}
