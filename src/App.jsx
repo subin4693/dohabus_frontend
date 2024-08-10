@@ -16,6 +16,7 @@ import "./App.css";
 
 function App() {
     return (
+        <div className="font-inter">
         <Router>
             <Routes>
                 <Route path="/" element={<Layout />}>
@@ -38,7 +39,7 @@ function App() {
                     <Route path="/admin/users" element={<ManageUsers />} />
                 </Route>
             </Routes>
-        </Router>
+        </Router></div>
     );
 }
 

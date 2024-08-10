@@ -2,10 +2,10 @@
 module.exports = {
     darkMode: ["class"],
     content: [
-        './pages/**/*.{js,jsx}',
-        './components/**/*.{js,jsx}',
-        './app/**/*.{js,jsx}',
-        './src/**/*.{js,jsx}',
+        "./pages/**/*.{js,jsx}",
+        "./components/**/*.{js,jsx}",
+        "./app/**/*.{js,jsx}",
+        "./src/**/*.{js,jsx}",
     ],
     prefix: "",
     theme: {
@@ -18,25 +18,23 @@ module.exports = {
         },
         extend: {
             colors: {
-                primary: 'var(--color-primary)',
-                secondary: 'var(--color-secondary)',
-            },
-            backgroundColor: {
-                'primary': 'var(--background-primary)',
-                'secondary': 'var(--background-secondary)',
+                primary: "var(--color-primary)",
+                "primary-2": "var(--background-primary)",
+                secondary: "var(--color-secondary)",
+                "secondary-2": "var(--background-secondary)",
             },
             fontFamily: {
-                inter: ['Inter', 'sans-serif'],
-                rubik: ['Rubik', 'sans-serif'],
-                'custom-sans': ['Helvetica', 'Arial', 'sans-serif'],
+                inter: ["Inter", "sans-serif"],
+                rubik: ["Rubik", "sans-serif"],
+                "custom-sans": ["Helvetica", "Arial", "sans-serif"],
             },
             fontSize: {
-                'title': '2.5rem',
-                'subtitle': '1.75rem',
-                'paragraph': '1rem',
-                'small': '0.875rem',
+                title: "2.5rem",
+                subtitle: "1.75rem",
+                paragraph: "1rem",
+                small: "0.875rem",
             },
-        }
+        },
     },
     plugins: [],
 };
