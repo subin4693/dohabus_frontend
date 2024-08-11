@@ -6,10 +6,15 @@
 
 @layer base {
     :root {
-        --color-primary: #FFBF00;
-        --color-secondary: #DEAC80;
-        --background-primary: #FEF3E2;
-        --background-secondary: #FFFFFF;
+        --color-yellow:54, 100%, 50%;
+        --color-black: 356, 8%, 13%;
+        --color-orange: 16, 84%, 56%;
+        --color-blue: 199, 93%, 46%;
+        --color-gray: 0, 1%, 60%;
+        --color-red: 355, 73%, 42%;
+        --color-green: 76, 62%, 53%;
+        --color-purple: 238, 31%, 62%;
         font-family: "Inter", sans-serif;
     }
+ 
 }

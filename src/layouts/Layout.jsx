@@ -6,7 +6,9 @@ const Layout = () => {
     return (
         <>
             <Navbar />
-            <Outlet />
+            <div className="px-[150px] py-4">
+                <Outlet />
+            </div>
         </>
     );
 };

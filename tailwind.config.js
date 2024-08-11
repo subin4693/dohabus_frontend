@@ -18,10 +18,14 @@ module.exports = {
         },
         extend: {
             colors: {
-                primary: "var(--color-primary)",
-                "primary-2": "var(--background-primary)",
-                secondary: "var(--color-secondary)",
-                "secondary-2": "var(--background-secondary)",
+                yellow: "hsl(var(--color-yellow))",
+                black: "hsl(var(--color-black))",
+                orange: "hsl(var(--color-orange))",
+                blue: "hsl(var(--color-blue))",
+                gray: "hsl(var(--color-gray))",
+                red: "hsl(var(--color-red))",
+                green: "hsl(var(--color-green))",
+                purple: "hsl(var(--color-purple))",
             },
             fontFamily: {
                 inter: ["Inter", "sans-serif"],
