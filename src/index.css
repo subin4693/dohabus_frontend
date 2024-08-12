@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,542;1,542&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,542;1,542&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,7 +6,7 @@
 
 @layer base {
     :root {
-        --color-yellow:54, 100%, 50%;
+        --color-yellow: 54, 100%, 50%;
         --color-black: 356, 8%, 13%;
         --color-orange: 16, 84%, 56%;
         --color-blue: 199, 93%, 46%;
@@ -16,5 +16,47 @@
         --color-purple: 238, 31%, 62%;
         font-family: "Inter", sans-serif;
     }
- 
+}
+.navbar {
+    transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: black;
+}
+
+.navbar.default {
+    background-color: var(--bg-color);
+}.blur {
+    backdrop-filter: blur(10px);
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.slide-in {
+    animation: slideIn 0.3s ease-in-out;
+}
+
+.slide-out {
+    animation: slideOut 0.3s ease-in-out;
 }
