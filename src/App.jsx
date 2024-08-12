@@ -15,12 +15,16 @@ import ManageTickets from "./pages/ManageTickets";
 import ManageUsers from "./pages/ManageUser";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
+import Signup from "./pages/auth/Signup";
+import Signin from "./pages/auth/Signin";
 
 function App() {
     return (
         <div className="font-inter">
             <Router>
                 <Routes>
+                    <Route path="/signup" element={<Signup />} />
+                    <Route path="/signin" element={<Signin />} />
                     <Route path="/" element={<Layout />}>
                         <Route path="/" element={<Home />} />
                         <Route path="/tours" element={<TourPlanList />} />

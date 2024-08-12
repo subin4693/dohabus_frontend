@@ -71,9 +71,12 @@ const Navbar = () => {
                 <button>
                     <FaCartShopping />
                 </button>
-                <button className="hover:text-black duration-200 delay-50 rounded-lg hover:bg-yellow px-2 py-1 ">
+                <Link
+                    to="/signin"
+                    className="hover:text-black duration-200 delay-50 rounded-lg hover:bg-yellow px-2 py-1 "
+                >
                     Login
-                </button>
+                </Link>
             </div>
         </div>
     );
