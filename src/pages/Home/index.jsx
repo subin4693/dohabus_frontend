@@ -112,7 +112,9 @@ const Home = () => {
                 <h1 className="text-subtitle font-bold text-center mb-5">
                     Hop on - Hop off Map
                 </h1>
-                <img src={map} />
+                <div className="min-h-[300px] md:h-[70vh]">
+                    <img src={map} className="w-full h-full object-cover" />
+                </div>
             </div>
             <div
                 id="categorySection"
