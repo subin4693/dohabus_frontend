@@ -53,10 +53,11 @@ const Home = () => {
         <div id="homesection" className="homesection">
             {" "}
             <Banner />
-            <div className="mt-[17rem] md:mt-36 flex items-center flex-col justify-center">
-                <h1 className="text-subtitle font-bold text-center ">
+            <div className="mt-[17rem] md:mt-[10%] flex items-center flex-col justify-center">
+                <h1 className="text-subtitle font-bold text-center">
                     Popular Routes
                 </h1>
+
                 <p className="text-center max-w-md">
                     Discover the heritage side of Qatar with our North of Qatar
                     Tour (Approx 40km North of Doha). You will be visiting Umm
@@ -128,7 +129,7 @@ const Home = () => {
                     <div className="flex justify-center items-center gap-5 mt-10">
                         {data.map((category, index) => (
                             <div
-                                className={`h-[300px] md:h-[600px]  rounded-lg overflow-hidden relative group mb-3 duration-[.7s]  ${
+                                className={`h-[300px] md:h-[60vh]  rounded-lg overflow-hidden relative group mb-3 duration-[.7s]  ${
                                     index == categoryIndex
                                         ? "w-full"
                                         : "w-[50px]"

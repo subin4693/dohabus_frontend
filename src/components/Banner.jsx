@@ -25,7 +25,7 @@ const Banner = () => {
                 <br />
                 <span className="font-bold">Riding </span>to
             </h1>
-            <div className="absolute -bottom-[350px] md:-bottom-[250px] bg- shadow-xl rounded-[20px]   md:w-[70%] relative">
+            <div className="absolute -bottom-[350px] md:-bottom-[30vh] bg- shadow-xl rounded-[20px]   md:w-[70%] relative">
                 <div className="flex overflow-hidden">
                     <div className="bg-white px-10 py-5 rounded-tl-[20px]">
                         Hop on Hop off Bus Tour

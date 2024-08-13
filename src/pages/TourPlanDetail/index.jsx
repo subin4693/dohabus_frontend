@@ -4,6 +4,9 @@ import BookingModal from "./BookingModal";
 
 const TourPlanDetail = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedImage, setSelectedImage] = useState(
+        "https://c.regencyholidays.com/blog/blog/content/images/2021/08/Places-To-Visit-In-Qatar.webp"
+    );
     const [formData, setFormData] = useState({
         category: "Sightseeing",
         coverImage:
@@ -59,7 +62,7 @@ const TourPlanDetail = () => {
             <div className="flex-1 mb-4 lg:mb-0 w-full lg:w-1/2 ">
                 <div className="relative group w-full h-[500px] overflow-hidden mb-4 rounded-3xl">
                     <img
-                        src={formData.coverImage}
+                        src={selectedImage}
                         className="object-cover w-full h-full transition-transform duration-500 ease-in-out transform group-hover:scale-105"
                         alt="Main"
                     />
@@ -70,6 +73,7 @@ const TourPlanDetail = () => {
                         <div
                             key={index}
                             className="rounded-2xl w-[100px] h-[100px] cursor-pointer overflow-hidden transition-transform duration-300 ease-in-out transform hover:-translate-y-3"
+                            onClick={() => setSelectedImage(image)}
                         >
                             <img
                                 src={image}
