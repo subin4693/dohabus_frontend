@@ -6,7 +6,7 @@ const Banner = () => {
     const [cities, setCities] = useState([
         { from: "Marriott Hotel", to: "Qatar National Museum", price: 180 },
         { from: "Souq Waqif", to: "The Pearl-Qatar", price: 130 },
-        { from: "Katara Cultural Village", to: "Doha Corniche", price: 10 },
+        { from: "Katara Cultural Village", to: "Doha Corniche", price: 150 },
     ]);
     const [selectedCity, setSelectedCity] = useState(cities[0]);
 
