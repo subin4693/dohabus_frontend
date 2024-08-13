@@ -10,6 +10,9 @@ import Dashboard from "./pages/Dashboard";
 import CreateCategory from "./pages/CreateCategory";
 import AdminLayout from "./layouts/AdminLayout";
 
+import About from "./pages/About";
+import Contact from "./pages/Contactus";
+
 import CreateTourPlans from "./pages/CreateTourPlan";
 import ManageTickets from "./pages/ManageTickets";
 import ManageUsers from "./pages/ManageUser";
@@ -28,6 +31,8 @@ function App() {
                     <Route path="/" element={<Layout />}>
                         <Route path="/" element={<Home />} />
                         <Route path="/tours" element={<TourPlanList />} />
+                        <Route path="/about" element={<About />} />
+                        <Route path="/contact" element={<Contact />} />
                         <Route
                             path="/tours/:id"
                             element={<TourPlanDetails />}

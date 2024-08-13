@@ -98,7 +98,7 @@ const Dashboard = () => {
                     y={ey}
                     textAnchor={textAnchor}
                     fill="#333"
-                >{`PV ${value}`}</text>
+                >{`Tickets ${value}`}</text>
                 <text
                     x={ex + (cos >= 0 ? 1 : -1) * 12}
                     y={ey}

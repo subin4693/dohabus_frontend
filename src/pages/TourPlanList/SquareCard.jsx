@@ -14,14 +14,14 @@ const SquareCard = ({ title, description, image, id }) => {
     return (
         <div
             onClick={handleNavigate}
-            className="relative rounded-lg overflow-hidden h-[330px] w-[300px] group shadow-xl bg-cover bg-center"
+            className="relative rounded-lg overflow-hidden h-[330px]   shadow-xl bg-cover bg-center group"
         >
             {" "}
             <button
                 onClick={handleRemoveCart}
                 className="absolute right-2 top-2 backdrop-blur-lg  p-2 rounded-full opacity-0 group-hover:opacity-90 duration-100 delay-50 backdrop-blur-sm bg-white/30"
             >
-                <FaHeart className=" text-white w-6 h-6" />
+                <FaHeart className=" text-red w-6 h-6" />
             </button>
             <div className="  h-[250px] overflow-hidden ">
                 <img

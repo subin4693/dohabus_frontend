@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom"; // Import useLocation
+import { useLocation, useNavigate } from "react-router-dom"; // Import useLocation
 import Dohabuslogo from "../assets/DOHA_Bus_Logo_Black_BG-removebg-preview.png";
 import { FaCartShopping } from "react-icons/fa6";
 import { Link } from "react-router-dom";
@@ -23,7 +23,7 @@ const Navbar = () => {
     }, []);
 
     const isHomePage = location.pathname === "/";
-    console.log(isHomePage);
+    const navigate = useNavigate();
     return (
         <div
             className={`fixed top-0  left-0 z-50 right-0 px-2 lg:px-[150px] flex justify-between items-center text-white transition-bg duration-300 ${
@@ -32,31 +32,57 @@ const Navbar = () => {
         >
             <div className="flex gap-5 items-center justify-center">
                 <Link to={"/"}>
-                    <img src={Dohabuslogo} className="w-[8rem]" />
+                    <img src={Dohabuslogo} className="w-[8rem] min-w-[8rem]" />
                 </Link>
             </div>
             <div className="flex justify-center items-center gap-5">
-                <Link
+                <a
+                    className="hover:text-black duration-200 delay-50 rounded-lg hover:bg-yellow px-2 py-1 "
+                    href="#homesection"
+                    onClick={() => {
+                        navigate("/#homesection");
+                    }}
+                >
+                    {" "}
+                    Home
+                </a>{" "}
+                {/* <Link
                     className="hover:text-black duration-200 delay-50 rounded-lg hover:bg-yellow px-2 py-1 "
                     to="/"
                 >
                     Home
-                </Link>
-                <Link
+                </Link> */}
+                {/* <Link
                     className="hover:text-black duration-200 delay-50 rounded-lg hover:bg-yellow px-2 py-1 "
                     to="/"
                 >
                     Categorys
+                </Link> */}
+                <a
+                    className="hover:text-black duration-200 delay-50 rounded-lg hover:bg-yellow px-2 py-1 "
+                    href="#categorySection"
+                    onClick={() => {
+                        navigate("/#categorySection");
+                    }}
+                >
+                    {" "}
+                    Categories
+                </a>{" "}
+                <Link
+                    className="hover:text-black duration-200 delay-50 rounded-lg hover:bg-yellow px-2 py-1 "
+                    to="/tours"
+                >
+                    Tours
                 </Link>
                 <Link
                     className="hover:text-black duration-200 delay-50 rounded-lg hover:bg-yellow px-2 py-1 "
-                    to="/"
+                    to="/about"
                 >
                     About Us
                 </Link>
                 <Link
                     className="hover:text-black duration-200 delay-50 rounded-lg hover:bg-yellow px-2 py-1 "
-                    to="/"
+                    to="/contact"
                 >
                     Contactus
                 </Link>
@@ -68,9 +94,12 @@ const Navbar = () => {
                 </Link>
             </div>
             <div className="flex justify-center items-center gap-5">
-                <button>
+                <Link
+                    to="/cart"
+                    className="hover:text-black duration-200 delay-50 rounded-lg hover:bg-yellow px-2 py-2 "
+                >
                     <FaCartShopping />
-                </button>
+                </Link>
                 <Link
                     to="/signin"
                     className="hover:text-black duration-200 delay-50 rounded-lg hover:bg-yellow px-2 py-1 "

@@ -1,61 +1,83 @@
 import React from "react";
-import Card from "./Card";
-import Button from "../../components/Button";
+import { IoIosSearch } from "react-icons/io";
+import SquareCard from "./SquareCard";
 
 const TourPlans = () => {
     return (
-        <div>
-            <div
-                className="h-[40vh] w-full bg-cover bg-center overflow-hidden rounded-lg relative  "
-                style={{
-                    backgroundImage: `url(
-                        "https://c.regencyholidays.com/blog/blog/content/images/2021/08/Places-To-Visit-In-Qatar.webp"
-                    )`,
-                }}
-            >
-                <div className="bg-black bg-opacity-50 p-4 rounded-lg text-white w-full md:w-1/2 absolute bottom-0">
-                    <h3 className="text-xl font-bold">Category:name</h3>
-                    <p className="line-clamp-3">
-                        Description: Lorem, ipsum dolor sit amet consectetur
-                        adipisicing elit. Reprehenderit corrupti natus
-                        excepturi, sunt voluptatem ex omnis temporibus explicabo
-                        ad aut eaque qui nihil quae cumque possimus. Temporibus,
-                        sed voluptas. Officia!
-                    </p>
+        <div className="px-4 sm:px-6 lg:px-[150px] mt-36 py-4">
+            <div className="flex justify-center sm:justify-between items-center">
+                <div className="hidden sm:inline">
+                    <h1 className="text-2xl sm:text-3xl font-bold">
+                        All Plans
+                    </h1>
+                    <h5 className="text-stone-500 mt-2 sm:mt-3 text-sm sm:text-base">
+                        See our new tour plans
+                    </h5>
+                </div>
+                <div className="flex items-center justify-center gap-5 flex-col flex-col-reverse  md:flex-row">
+                    <select
+                        name="cars"
+                        className="  h-[30px]   pl-4 rounded-lg"
+                    >
+                        {" "}
+                        <option disabled>Filter by category</option>
+                        <option default value="fsd">
+                            All
+                        </option>
+                        <option value="volvo">Desert tour</option>
+                        <option value="saab">Sea tour</option>
+                        <option value="mercedes">City tour</option>
+                        <option value="audi">Places tourr</option>
+                    </select>
+
+                    <div className="rounded-md border-lg border-[1px] overflow-hidden p-1 flex justify-center items-center gap-1">
+                        <IoIosSearch className="h-5 w-5" />{" "}
+                        <input
+                            type="text"
+                            placeholder={` Type here to search`}
+                            className="bg-transparent border-none outline-none"
+                        />
+                    </div>
                 </div>
             </div>
-            <h1 className="text-subtitle font-bold mt-10">Plans</h1>
-            <p className="text-small text-red">Select your tour Plans</p>
-            <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-10 flex-wrap">
-                <Card
+            <div className="  py-4 mt-5   gap-10 grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4">
+                <SquareCard
                     id="101"
                     title="Beach Destinations"
                     image={
                         "https://c.regencyholidays.com/blog/blog/content/images/2021/08/Places-To-Visit-In-Qatar.webp"
                     }
                     description={"Explore teh best beaches around the world"}
-                />
-                <Card
-                    id="102"
-                    title="Beach Destinations"
-                    image={
-                        "https://c.regencyholidays.com/blog/blog/content/images/2021/08/Banana-Islands.webp"
-                    }
-                    description={"Explore teh best beaches around the world"}
-                />
-                <Card
-                    id="103"
+                />{" "}
+                <SquareCard
+                    id="101"
                     title="Beach Destinations"
                     image={
                         "https://c.regencyholidays.com/blog/blog/content/images/2021/08/Places-To-Visit-In-Qatar.webp"
                     }
                     description={"Explore teh best beaches around the world"}
-                />
-                <Card
-                    id="104"
+                />{" "}
+                <SquareCard
+                    id="101"
                     title="Beach Destinations"
                     image={
-                        "https://media.easemytrip.com/media/Blog/International/637597107367841576/637597107367841576IlmTQB.jpg"
+                        "https://c.regencyholidays.com/blog/blog/content/images/2021/08/Places-To-Visit-In-Qatar.webp"
+                    }
+                    description={"Explore teh best beaches around the world"}
+                />{" "}
+                <SquareCard
+                    id="101"
+                    title="Beach Destinations"
+                    image={
+                        "https://c.regencyholidays.com/blog/blog/content/images/2021/08/Places-To-Visit-In-Qatar.webp"
+                    }
+                    description={"Explore teh best beaches around the world"}
+                />{" "}
+                <SquareCard
+                    id="101"
+                    title="Beach Destinations"
+                    image={
+                        "https://c.regencyholidays.com/blog/blog/content/images/2021/08/Places-To-Visit-In-Qatar.webp"
                     }
                     description={"Explore teh best beaches around the world"}
                 />
